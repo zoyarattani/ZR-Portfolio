@@ -1,0 +1,1 @@
+Welcome to my portfolio repository! This repository showcases my work, skills, and experiences in software engineering, artificial intelligence, and cybersecurity. Below, you'll find an overview of my education, technical skills, projects, and professional experiences.
