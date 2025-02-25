@@ -11,45 +11,44 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #ff7eb3, #ff758c, #ff6a88);
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
             color: white;
             text-align: center;
         }
         header {
             padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            font-size: 2em;
-            font-weight: 700;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 1.8em;
+            font-weight: 600;
+            animation: fadeIn 1.5s ease-in-out;
         }
         section {
-            padding: 30px;
+            padding: 20px;
             margin: 20px auto;
-            width: 85%;
-            background: rgba(255, 255, 255, 0.15);
-            border-radius: 15px;
+            width: 80%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
             transition: transform 0.3s, background 0.3s;
             font-weight: 300;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         }
         section:hover {
             transform: scale(1.05);
-            background: rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.3);
         }
         ul {
             text-align: left;
-            max-width: 700px;
+            max-width: 600px;
             margin: auto;
             list-style-type: none;
             padding: 0;
         }
         li {
             margin: 10px 0;
-            padding-left: 25px;
+            padding-left: 20px;
             position: relative;
         }
         li::before {
-            content: '\2726';
+            content: '\2022';
             color: #ffcc00;
             font-weight: bold;
             display: inline-block; 
@@ -57,10 +56,9 @@
             margin-left: -1em;
         }
         footer {
-            padding: 15px;
-            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
             margin-top: 20px;
-            font-size: 1.1em;
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -71,7 +69,7 @@
 <body>
     <header>
         <h1>Zoya N. Rattani</h1>
-        <p><a href="mailto:zxr160@miami.edu" style="color: #ffcc00;">zxr160@miami.edu</a> | <a href="http://www.linkedin.com/in/zoyarattani" target="_blank" style="color: #ffcc00;">LinkedIn</a> | <a href="https://github.com/zoyarattani" target="_blank" style="color: #ffcc00;">GitHub</a></p>
+        <p><a href="mailto:zxr160@miami.edu">zxr160@miami.edu</a> | <a href="http://www.linkedin.com/in/zoyarattani" target="_blank">LinkedIn</a> | <a href="https://github.com/zoyarattani" target="_blank">GitHub</a></p>
     </header>
     <section id="education">
         <h2>Education</h2>
@@ -125,5 +123,5 @@
         <p>&copy; 2025 Zoya N. Rattani</p>
     </footer>
 </body>
-</html>
+</html> 
 
