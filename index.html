@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoya N. Rattani - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 1.8em;
+            font-weight: 600;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            transition: transform 0.3s, background 0.3s;
+            font-weight: 300;
+        }
+        section:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.3);
+        }
+        ul {
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        li::before {
+            content: '\2022';
+            color: #ffcc00;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+        footer {
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zoya N. Rattani</h1>
+        <p><a href="mailto:zxr160@miami.edu">zxr160@miami.edu</a> | <a href="http://www.linkedin.com/in/zoyarattani" target="_blank">LinkedIn</a> | <a href="https://github.com/zoyarattani" target="_blank">GitHub</a></p>
+    </header>
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>University of Miami</strong>, Bachelor of Science in Software Engineering, GPA: 3.65/4.00 (Expected May 2027)</p>
+        <ul>
+            <li>Bright Futures Academic Scholar</li>
+            <li>Cambridge AICE Diploma with Merit</li>
+            <li>Relevant Coursework: Logic Design, Data Structures, Algorithms, Linear Algebra, Discrete Mathematics</li>
+        </ul>
+    </section>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> HTML, CSS, JavaScript, Java, C++, Python (NLP, Pandas, NumPy), Flask, MySQL</li>
+            <li><strong>Software:</strong> VS Code, Unix, GitHub, JDoodle, Eclipse, Repl.It</li>
+        </ul>
+    </section>
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Break Through Tech</strong> - AI Fellow (May 2024 – Aug 2024)
+                <ul>
+                    <li>Mastered programming, algorithms, and AI through Cornell University’s ML curriculum</li>
+                    <li>Analyzed industry datasets to improve solutions by 30%</li>
+                    <li>Enhanced decision-making accuracy by 20% using statistical analysis</li>
+                </ul>
+            </li>
+            <li><strong>SEO</strong> - Software Developer Fellow (Jan 2024 – May 2024)
+                <ul>
+                    <li>Completed 300+ hours of software development training</li>
+                    <li>Led projects improving functionality by 30% and user engagement by 25%</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Cannon Game (C++)</strong> - Developed a target-shooting game with win/loss feedback, boosting engagement by 30%</li>
+            <li><strong>Logistic Regression Model (Python, NLP)</strong> - Optimized model accuracy by 15% through feature selection</li>
+        </ul>
+    </section>
+    <section id="leadership">
+        <h2>Leadership & Professional Development</h2>
+        <ul>
+            <li><strong>SEO Career</strong> - Completed 100+ hours of professional development training</li>
+            <li><strong>Aga Khan Foundation</strong> - Assisted in disaster relief for 50+ displaced individuals</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 Zoya N. Rattani</p>
+    </footer>
+</body>
+</html>
