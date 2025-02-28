@@ -6,8 +6,10 @@
     <title>Zoya Bytes</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -65,29 +67,51 @@
             from { opacity: 0; }
             to { opacity: 1; }
         }
+        .social-icons img {
+            width: 20px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
     </style>
 </head>
 <body>
+
 <header>
     <h1>Zoya N. Rattani</h1>
-    <p><a href="mailto:zxr160@miami.edu">zxr160@miami.edu</a> | <a href="http://www.linkedin.com/in/zoyarattani" target="_blank">LinkedIn</a> | <a href="https://github.com/zoyarattani" target="_blank">GitHub</a> | <a href="https://drive.google.com/file/d/1NCAh1-0kBe-z9mDH6SWDUAtKL5FToKc5/view?usp=sharing" target="_blank">Download Resume </a></p>
+    <p class="social-icons">
+        <a href="mailto:zxr160@miami.edu">
+            <img src="email.png" alt="Email"> zxr160@miami.edu
+        </a> | 
+        <a href="http://www.linkedin.com/in/zoyarattani" target="_blank">
+            <img src="linkedin.png" alt="LinkedIn">
+        </a> | 
+        <a href="https://github.com/zoyarattani" target="_blank">
+            <img src="github.png" alt="GitHub">
+        </a> | 
+        <a href="https://drive.google.com/file/d/1NCAh1-0kBe-z9mDH6SWDUAtKL5FToKc5/view?usp=sharing" target="_blank">
+            Download Resume
+        </a>
+    </p>
 </header>
+
 <section id="education">
-        <h2>Education</h2>
-        <p><strong>University of Miami</strong>, Bachelor of Science in Software Engineering, GPA: 3.65/4.00 (Expected May 2027)</p>
-        <ul>
-            <li>Bright Futures Academic Scholar</li>
-            <li>Cambridge AICE Diploma with Merit</li>
-            <li>Relevant Coursework: Logic Design, Data Structures, Algorithms, Linear Algebra, Discrete Mathematics</li>
-        </ul>
-    </section>
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> HTML, CSS, JavaScript, Java, C++, Python (NLP, Pandas, NumPy), Flask, MySQL</li>
-            <li><strong>Software:</strong> VS Code, Unix, GitHub, JDoodle, Eclipse, Repl.It</li>
-        </ul>
-    </section>
+    <h2>Education</h2>
+    <p><strong>University of Miami</strong>, Bachelor of Science in Software Engineering, GPA: 3.65/4.00 (Expected May 2027)</p>
+    <ul>
+        <li>Bright Futures Academic Scholar</li>
+        <li>Cambridge AICE Diploma with Merit</li>
+        <li>Relevant Coursework: Logic Design, Data Structures, Algorithms, Linear Algebra, Discrete Mathematics</li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+        <li><strong>Languages:</strong> HTML, CSS, JavaScript, Java, C++, Python (NLP, Pandas, NumPy), Flask, MySQL</li>
+        <li><strong>Software:</strong> VS Code, Unix, GitHub, JDoodle, Eclipse, Repl.It</li>
+    </ul>
+</section>
+
     <section id="experience">
         <h2>Work Experience</h2>
         <ul>
@@ -112,22 +136,36 @@
                       <li>Applied defensive hacking techniques to identify and mitigate cybersecurity threats, reducing vulnerabilities by 40%.</li>
                   </ul>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Cannon Game (C++)</strong> - Developed a target-shooting game with win/loss feedback, boosting engagement by 30%.</li>
-            <li><strong>Logistic Regression Model (Python, NLP, Pandas, NumPy)</strong> - Designed and implemented a Python class from scratch to develop and train a logistic regression model, leveraging gradient descent and mathematical optimization techniques, resulting in a 50% reduction in training time and a reusable, scalable tool for supervised learning tasks.</li>
-        </ul>
-    </section>
-    <section id="leadership">
-        <h2>Leadership & Professional Development</h2>
-        <ul>
-            <li><strong>SEO Career</strong> - Completed 100+ hours of coaching and online instruction targeting professional, technical, and soft skill development.</li>
-            <li><strong>Aga Khan Foundation</strong> - Coordinated with 3 major relief organizations (Public Safety, Red Cross, and local shelters) to secure temporary housing for 50+ displaced individuals.</li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2025 Zoya N. Rattani</p>
-    </footer>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <strong>Cannon Game (C++)</strong> 
+                <img src="Cannon Game picture.png" alt="Cannon Game" width="20">
+            </a> 
+            - Developed a target-shooting game with win/loss feedback, boosting engagement by 30%.
+        </li>
+        <li>
+            <strong>Logistic Regression Model (Python, NLP, Pandas, NumPy)</strong>
+                <img src="logistic regression.jpg" alt="Logistic Regression" width="20">
+            </a> 
+            - Designed and implemented a Python class from scratch to develop and train a logistic regression model, leveraging gradient descent and mathematical optimization techniques, resulting in a 50% reduction in training time and a reusable, scalable tool for supervised learning tasks.
+        </li>
+    </ul>
+</section>
+
+<section id="leadership">
+    <h2>Leadership & Professional Development</h2>
+    <ul>
+        <li><strong>SEO Career</strong> - Completed 100+ hours of coaching and online instruction targeting professional, technical, and soft skill development.</li>
+        <li><strong>Aga Khan Foundation</strong> - Coordinated with 3 major relief organizations (Public Safety, Red Cross, and local shelters) to secure temporary housing for 50+ displaced individuals.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Zoya N. Rattani</p>
+</footer>
+
 </body>
-</html> 
+</html>
