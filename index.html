@@ -68,18 +68,32 @@
             to { opacity: 1; }
         }
         .social-icons img {
-            width: 25px;
-            margin: 0 8px;
+            width: 40px;
+            margin: 0 10px;
             vertical-align: middle;
         }
         .social-icons a {
             text-decoration: none;
             color: white;
+            font-weight: 500;
+        }
+        .social-icons {
+            font-size: 1.2em;
+            margin-top: 10px;
         }
         .project-images img {
-            width: 150px;
+            width: 200px;
             height: auto;
-            margin-left: 15px;
+            margin-left: 20px;
+            vertical-align: middle;
+        }
+        .project-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .project-item img {
+            margin-left: 20px;
         }
     </style>
 </head>
@@ -89,13 +103,13 @@
     <h1>Zoya N. Rattani</h1>
     <p class="social-icons">
         <a href="mailto:zxr160@miami.edu">
-            <img src="email.png" alt="Email">
+            <img src="email.png" alt="zxr160@miami.edu"> Email
         </a> | 
         <a href="http://www.linkedin.com/in/zoyarattani" target="_blank">
-            <img src="linkedin.png" alt="LinkedIn">
+            <img src="linkedin.png" alt="LinkedIn"> LinkedIn
         </a> | 
         <a href="https://github.com/zoyarattani" target="_blank">
-            <img src="github.png" alt="GitHub">
+            <img src="github.png" alt="GitHub"> GitHub
         </a> | 
         <a href="https://drive.google.com/file/d/1NCAh1-0kBe-z9mDH6SWDUAtKL5FToKc5/view?usp=sharing" target="_blank">
             Download Resume
@@ -149,14 +163,14 @@
 <section id="projects">
     <h2>Projects</h2>
     <ul>
-        <li>
+        <li class="project-item">
             <strong>Cannon Game (C++)</strong>
             <div class="project-images">
                 <img src="Cannon Game picture.png" alt="Cannon Game">
             </div>
             - Developed a target-shooting game with win/loss feedback, boosting engagement by 30%.
         </li>
-        <li>
+        <li class="project-item">
             <strong>Logistic Regression Model (Python, NLP, Pandas, NumPy)</strong>
             <div class="project-images">
                 <img src="logistic regression.jpg" alt="Logistic Regression">
@@ -177,6 +191,10 @@
 <footer>
     <p>&copy; 2025 Zoya N. Rattani</p>
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
