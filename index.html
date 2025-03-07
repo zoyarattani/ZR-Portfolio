@@ -112,6 +112,39 @@ h1, h2, p, a {
 </head>
 <body>
 
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact-info a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Circle size */
+    height: 50px;
+    background: rgba(0, 195, 255, 0.2); /* Light blue transparent background */
+    border-radius: 50%; /* Makes it circular */
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-info a img {
+    width: 25px; /* Icon size */
+    height: 25px;
+    filter: invert(1); /* Makes icons white if they are black */
+}
+
+.contact-info a:hover {
+    background: rgba(0, 195, 255, 0.6); /* Brighter blue on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+
 <header>
     <h1>Zoya N. Rattani</h1>
     <p class="social-icons">
