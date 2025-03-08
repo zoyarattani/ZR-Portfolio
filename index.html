@@ -6,6 +6,35 @@
     <title>Zoya Bytes</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        function scrollToBottom() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+    </script>
+    <style>
+        .scroll-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .scroll-buttons button {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .scroll-buttons button:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
@@ -202,6 +231,11 @@ h1, h2, p, a {
         <li><strong>Aga Khan Foundation</strong> - Coordinated with 3 major relief organizations (Public Safety, Red Cross, and local shelters) to secure temporary housing for 50+ displaced individuals.</li>
     </ul>
 </section>
+
+  <div class="scroll-buttons">
+        <button onclick="scrollToTop()">&#8679;</button>
+        <button onclick="scrollToBottom()">&#8681;</button>
+    </div>
 
 <footer>
     <p>&copy; 2025 Zoya N. Rattani</p>
