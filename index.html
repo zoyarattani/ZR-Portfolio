@@ -24,7 +24,7 @@
       color: white;
       text-align: center;
       position: relative;
-      padding-top: 60px; /* reserve space for fixed navbar */
+      padding-top: 60px;
     }
 
     body::before {
@@ -38,7 +38,6 @@
       z-index: -1;
     }
 
-    /* Sticky Nav Bar */
     .navbar {
       position: fixed;
       top: 0;
@@ -151,11 +150,36 @@
       list-style-type: circle;
       padding-left: 20px;
     }
+
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      font-size: 1.8em;
+      background-color: rgba(0, 195, 255, 0.8);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      box-shadow: 0 0 10px #00c3ff;
+      transition: opacity 0.3s, transform 0.3s;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 1000;
+    }
+
+    #backToTop:hover {
+      transform: scale(1.1);
+      background-color: #1affff;
+    }
+
+    #backToTop.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
   </style>
 </head>
-
 <body>
-  <!-- Sticky Nav -->
   <nav class="navbar">
     <a href="#about">About</a>
     <a href="#education">Education</a>
@@ -277,27 +301,31 @@
     <p>&copy; 2025 Zoya N. Rattani</p>
   </footer>
 
-  <!-- Scripts -->
+ <a href="#" id="backToTop" title="Back to Top">↑</a>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 800, offset: 120, once: true });
-  </script>
 
-  <!-- Active Section Highlighting -->
-  <script>
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add("show");
+      } else {
+        backToTop.classList.remove("show");
+      }
+    });
+
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".navbar a");
-
     window.addEventListener("scroll", () => {
       let current = "";
-
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 100;
         if (scrollY >= sectionTop) {
           current = section.getAttribute("id");
         }
       });
-
       navLinks.forEach((link) => {
         link.classList.remove("active");
         if (link.getAttribute("href").includes(current)) {
@@ -308,5 +336,3 @@
   </script>
 </body>
 </html>
-
-
