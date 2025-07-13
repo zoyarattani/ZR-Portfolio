@@ -372,22 +372,25 @@
       }
     });
 
-   const sections = document.querySelectorAll("section");
+  const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".navbar a");
 
 window.addEventListener("scroll", () => {
-  let current = "";
-  const scrollPos = window.scrollY + 80; // Adjust this value to match your fixed navbar height
+  let currentSection = "";
 
   sections.forEach((section) => {
-    if (scrollPos >= section.offsetTop) {
-      current = section.getAttribute("id");
+    const rect = section.getBoundingClientRect();
+    const offsetTop = window.scrollY + rect.top;
+    const offsetBottom = offsetTop + section.offsetHeight;
+
+    if (window.scrollY + 100 >= offsetTop && window.scrollY + 100 < offsetBottom) {
+      currentSection = section.getAttribute("id");
     }
   });
 
   navLinks.forEach((link) => {
     link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
+    if (link.getAttribute("href") === `#${currentSection}`) {
       link.classList.add("active");
     }
   });
